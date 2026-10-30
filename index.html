@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indus Leather Co — Handmade Leather Goods, Lahore Pakistan | Wholesale &amp; Private Label</title>
+<meta name="description" content="Indus Leather Co — hand-stitched full-grain leather goods made to order in Lahore, Pakistan. Wholesale and private-label card holders, wallets and small leather goods for importers, distributors and gift retailers.">
+<style>
+  :root{
+    --navy:#131c2e; --navy2:#1b2942; --char:#22262b; --ink:#2b2f36;
+    --tan:#b9824c; --tan-light:#d9b98c; --paper:#f7f4ef; --line:#e3ddd2;
+    --muted:#5c6470; --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--paper);line-height:1.6}
+  h1,h2,h3,.sans{font-family:'Helvetica Neue',Arial,sans-serif}
+  a{color:var(--tan);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  header{background:var(--navy);color:var(--white);padding:18px 0}
+  .header-flex{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+  .logo{font-family:'Helvetica Neue',Arial,sans-serif;font-size:24px;letter-spacing:3px;font-weight:700}
+  .logo span{color:var(--tan-light)}
+  nav a{color:#cfd6e2;margin-left:22px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+  nav a:hover{color:var(--tan-light);text-decoration:none}
+
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 70%,#2a2118 100%);color:var(--white);padding:84px 0 72px}
+  .hero .kicker{font-family:'Helvetica Neue',Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;font-size:12px;color:var(--tan-light);margin-bottom:18px}
+  .hero h1{font-size:44px;line-height:1.15;font-weight:700;max-width:720px}
+  .hero p{max-width:640px;margin-top:20px;font-size:18px;color:#d7dce6}
+  .hero .cta{margin-top:34px}
+  .btn{display:inline-block;background:var(--tan);color:var(--white);padding:13px 28px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;border-radius:2px;margin-right:12px}
+  .btn:hover{background:#a06c38;text-decoration:none}
+  .btn.ghost{background:transparent;border:1px solid var(--tan-light);color:var(--tan-light)}
+  .btn.ghost:hover{background:rgba(217,185,140,.12)}
+  .hero .note{margin-top:26px;font-size:14px;color:#9aa5b8;font-style:italic}
+
+  section{padding:64px 0}
+  section.alt{background:var(--white)}
+  h2{font-size:30px;color:var(--navy);margin-bottom:8px}
+  .rule{width:56px;height:3px;background:var(--tan);margin:14px 0 30px}
+  .lead{font-size:17px;color:var(--muted);max-width:760px;margin-bottom:28px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .card{background:var(--white);border:1px solid var(--line);padding:26px;border-radius:3px}
+  section.alt .card{background:var(--paper)}
+  .card h3{font-size:17px;color:var(--navy);margin-bottom:10px}
+  .card p{font-size:15px;color:var(--muted)}
+
+  .photo-slot{border:2px dashed #c9bda6;background:#efe9dd;color:#8a7a5c;display:flex;align-items:center;justify-content:center;text-align:center;min-height:260px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;letter-spacing:1px;padding:20px;border-radius:3px}
+  .photo-slot.small{min-height:150px}
+
+  .product-flex{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  @media(max-width:760px){.product-flex{grid-template-columns:1fr}.hero h1{font-size:32px}}
+
+  table{width:100%;border-collapse:collapse;font-size:15px;background:var(--white)}
+  th,td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+  th{background:var(--navy);color:var(--white);font-family:'Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:13px;letter-spacing:.5px;text-transform:uppercase}
+  td:first-child{font-weight:bold;color:var(--navy);width:38%}
+
+  .steps{counter-reset:step;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px}
+  .step{background:var(--white);border:1px solid var(--line);padding:24px;border-radius:3px}
+  section.alt .step{background:var(--paper)}
+  .step .num{font-family:'Helvetica Neue',Arial,sans-serif;font-size:26px;color:var(--tan);font-weight:700}
+  .step h3{font-size:16px;color:var(--navy);margin:8px 0}
+  .step p{font-size:14px;color:var(--muted)}
+
+  .terms-flex{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+  ul.tick{list-style:none}
+  ul.tick li{padding:7px 0 7px 24px;position:relative;font-size:15px;border-bottom:1px solid var(--line)}
+  ul.tick li:last-child{border-bottom:none}
+  ul.tick li::before{content:"—";position:absolute;left:0;color:var(--tan);font-weight:bold}
+
+  .faq details{background:var(--white);border:1px solid var(--line);margin-bottom:10px;padding:16px 20px;border-radius:3px}
+  section.alt .faq details{background:var(--paper)}
+  .faq summary{font-family:'Helvetica Neue',Arial,sans-serif;font-weight:600;color:var(--navy);cursor:pointer}
+  .faq p{margin-top:10px;font-size:15px;color:var(--muted)}
+
+  .contact-band{background:var(--char);color:#e8e6e1;padding:64px 0}
+  .contact-band h2{color:var(--white)}
+  .contact-band .lead{color:#b9bcc2}
+  .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+  .contact-grid h3{color:var(--tan-light);font-size:15px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+  .contact-grid p{font-size:16px}
+  .contact-grid a{color:var(--white);text-decoration:underline}
+
+  footer{background:var(--navy);color:#8b96a9;padding:28px 0;font-size:13px;font-family:'Helvetica Neue',Arial,sans-serif}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .est{font-size:13px;color:var(--tan);font-style:italic}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-flex">
+    <div class="logo">Indus Leather Co</div>
+    <nav>
+      <a href="#product">Flagship Product</a>
+      <a href="#range">Range</a>
+      <a href="#terms">Wholesale Terms</a>
+      <a href="#process">Our Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Lahore, Pakistan — Wholesale &amp; Private Label</div>
+    <h1>Handmade Leather Goods, Made to Order for Trade Buyers</h1>
+    <p>Indus Leather Co supplies hand-stitched, full-grain leather small goods to importers, distributors, retailers and corporate-gift buyers. We manufacture to order in Lahore, Pakistan — the centre of Pakistan's leather-goods craft — and export on clear FOB terms with paid samples available before any bulk commitment.</p>
+    <div class="cta">
+      <a class="btn" href="#contact">Request a Sample</a>
+      <a class="btn ghost" href="#terms">Wholesale Terms</a>
+    </div>
+    <p class="note">A new export programme, built on an established Lahore leather-manufacturing base. We would rather show you a sample than make claims — order one and judge the work directly.</p>
+  </div>
+</div>
+
+<section id="product">
+  <div class="wrap">
+    <h2>Flagship Product</h2>
+    <div class="rule"></div>
+    <div class="product-flex">
+      <div>
+        <div class="photo-slot">[Product photo]<br><br>Full-Grain Leather Slim Card Holder — front view<br>(photography from our own production sample)</div>
+        <div class="photo-slot small" style="margin-top:16px">[Product photo]<br>Stitch &amp; edge detail / gift box</div>
+      </div>
+      <div>
+        <h3 class="sans" style="font-size:21px;color:var(--navy);margin-bottom:6px">Slim Card Holder — 6 Cards + Centre Pocket, Gift Boxed</h3>
+        <p style="color:var(--muted);margin-bottom:20px">Hand-stitched from full-grain cow leather — the top, strongest layer of the hide, not bonded or split leather. Sized for UK/EU bank cards, supplied in a gift box as standard, and available with your own branding under private label.</p>
+        <table>
+          <tr><td>Material</td><td>Full-grain cow leather (top grain; specification sheet available on request)</td></tr>
+          <tr><td>Capacity</td><td>6 card slots + 1 centre pocket for folded notes</td></tr>
+          <tr><td>Dimensions</td><td>Approx. 10.5 × 8 cm <span class="est">(target — confirmed against production sample)</span></td></tr>
+          <tr><td>Unit weight</td><td>Approx. 80 g including gift box <span class="est">(to be confirmed from production sample)</span></td></tr>
+          <tr><td>Colours</td><td>Tan · Black · Chocolate</td></tr>
+          <tr><td>Stitching</td><td>Hand-stitched (saddle stitch)</td></tr>
+          <tr><td>Packaging</td><td>Individual gift box included; retail barcode on box available for retail-channel buyers</td></tr>
+          <tr><td>Branding options</td><td>Blind or foil logo embossing/debossing, private-label box and care card — to your artwork</td></tr>
+          <tr><td>HS code</td><td>4202 31 00 (leather articles normally carried in the pocket or handbag)</td></tr>
+          <tr><td>Country of origin</td><td>Made in Pakistan</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="range" class="alt">
+  <div class="wrap">
+    <h2>Product Range — Made to Order / OEM</h2>
+    <div class="rule"></div>
+    <p class="lead">The card holder is our flagship. The same workshop base manufactures the following to order, to your specification, colours and branding. Samples available for each line before bulk production.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Slim Card Holder</h3>
+        <p>Our flagship line — 6 cards + centre pocket, gift boxed. In production specification now.</p>
+      </div>
+      <div class="card">
+        <h3>Bifold Wallet</h3>
+        <p>Classic bifold in full-grain leather, card slots and note compartment. Made to order / OEM.</p>
+      </div>
+      <div class="card">
+        <h3>Passport Holder</h3>
+        <p>Travel format with document and card storage. Made to order / OEM — a natural fit for gift and travel retail.</p>
+      </div>
+      <div class="card">
+        <h3>Waxed Canvas Tool Roll</h3>
+        <p>Workshop and motorcycle tool rolls in waxed canvas with leather trim. Made to order / OEM.</p>
+      </div>
+    </div>
+    <p style="margin-top:22px;font-size:15px;color:var(--muted)">Custom designs: send us a specification, reference sample or technical drawing and we will quote sampling and production against it.</p>
+  </div>
+</section>
+
+<section id="terms">
+  <div class="wrap">
+    <h2>Wholesale Terms — Snapshot</h2>
+    <div class="rule"></div>
+    <div class="terms-flex">
+      <div class="card">
+        <h3>Orders &amp; Pricing</h3>
+        <ul class="tick">
+          <li>Minimum order: <strong>100 units</strong> (trial orders welcome at this level)</li>
+          <li>Price tiers at <strong>100 / 300 / 500 / 1,000 units</strong> — full FOB price list supplied on enquiry</li>
+          <li>Private label and logo embossing available across all tiers</li>
+          <li>No exclusivity is granted on trial orders; channel or design exclusivity is only discussed after a paid, delivered first order</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Lead Times <span class="est">(estimates — confirmed in writing against your order specification)</span></h3>
+        <ul class="tick">
+          <li>Samples: approx. 2–4 weeks including international courier</li>
+          <li>Production: approx. 3–5 weeks from deposit and artwork approval</li>
+          <li>Dispatch updates with photographs before shipment on every order</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Payment &amp; Shipping</h3>
+        <ul class="tick">
+          <li><strong>50% advance by bank transfer (T/T)</strong> to confirm the order; <strong>50% before dispatch</strong> against final photographs and packing details</li>
+          <li>Quoted <strong>FOB Pakistan</strong> (Karachi / Lahore, as agreed per shipment)</li>
+          <li><strong>The buyer is importer of record</strong> in their own market and handles import duty and VAT at destination — we supply the full export document set (see Process)</li>
+          <li>First-order terms are deposit-based for both sides' protection; we do not offer open-account terms on first orders</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="alt">
+  <div class="wrap">
+    <h2>Our Process</h2>
+    <div class="rule"></div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Leather Sourcing</h3><p>Full-grain cow leather selected against a written specification — grade, thickness and tannage agreed with you before production, not substituted after.</p></div>
+      <div class="step"><div class="num">02</div><h3>Hand-Stitching</h3><p>Cut, stitched and edge-finished by Lahore leather craftsmen. Saddle stitching throughout the flagship range — a broken stitch does not unravel the seam.</p></div>
+      <div class="step"><div class="num">03</div><h3>Quality Checks</h3><p>Every unit is checked before packing: stitching, edge finish, slot fit with real cards, colour consistency and box presentation. Faulty units are rejected at our cost, not shipped and argued about later.</p></div>
+      <div class="step"><div class="num">04</div><h3>Export Packing &amp; Documents</h3><p>Export-grade carton packing with a full document set: commercial invoice, packing list, and certificate of origin / statement on origin where applicable, filed through Pakistan's PSW/WEBOC export system via our clearing agent.</p></div>
+    </div>
+
+    <h2 style="margin-top:56px">Quality &amp; Compliance</h2>
+    <div class="rule"></div>
+    <p class="lead">We sell leather that touches skin, so we take materials compliance seriously — and we will show you evidence rather than adjectives.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Full-Grain Specification</h3>
+        <p>Our card holders are made from full-grain leather — the complete top layer of the hide. We do not use bonded leather, split leather or PU substitutes in this range, and the material specification is stated in writing on every quotation.</p>
+      </div>
+      <div class="card">
+        <h3>REACH-Aware Materials</h3>
+        <p>UK/EU buyers must meet UK REACH limits for leather in skin contact, including chromium VI below 3&nbsp;mg/kg (Annex XVII, Entry 47) and restrictions on azo colourants (Entry 43). We source leather with these limits in mind and discuss your market's requirements before production, not after.</p>
+      </div>
+      <div class="card">
+        <h3>Lab Testing Available on Order</h3>
+        <p>Independent accredited laboratory testing (chromium VI and azo, per colour/material) can be arranged with internationally recognised labs operating in Pakistan, with reports issued against the actual production leather for your order. Tell us your compliance file requirements at enquiry stage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Buyer FAQ</h2>
+    <div class="rule"></div>
+    <div class="faq">
+      <details>
+        <summary>Can I order a sample before committing to a bulk order?</summary>
+        <p>Yes — and we recommend it. Samples are paid (price quoted per design, plus courier at cost), and the sample fee is credited against your first bulk order. Judge the leather, stitching and box yourself before any larger decision.</p>
+      </details>
+      <details>
+        <summary>What is your minimum order quantity?</summary>
+        <p>100 units for the flagship card holder, with price tiers at 300, 500 and 1,000 units. Mixed colours within an order can be discussed at enquiry.</p>
+      </details>
+      <details>
+        <summary>Can you put my logo and branding on the product?</summary>
+        <p>Yes. Blind or foil embossing/debossing on the leather, plus private-label gift boxes and care cards to your artwork. Artwork approval and a pre-production sample are part of the process before bulk production starts.</p>
+      </details>
+      <details>
+        <summary>What are your payment terms?</summary>
+        <p>50% advance by bank transfer (T/T) to confirm the order, and 50% before dispatch against final photographs and packing details. These terms protect both sides on a first trade; terms can be revisited as a trading relationship develops.</p>
+      </details>
+      <details>
+        <summary>Who handles customs, duty and VAT in my country?</summary>
+        <p>You do, as importer of record — our prices are FOB Pakistan. We provide the complete export document set (commercial invoice, packing list, certificate of origin / statement on origin where applicable). For reference, UK MFN duty on HS 4202 31 00 is 2%, and Pakistan-origin goods may qualify for preferential treatment under the UK's DCTS scheme — your customs broker can confirm what applies to your shipment.</p>
+      </details>
+      <details>
+        <summary>How long will my order take?</summary>
+        <p>Estimates, confirmed in writing for your specific order: samples approx. 2–4 weeks including courier; production approx. 3–5 weeks from deposit and artwork approval. Freight time depends on the method you choose (air or sea) as the importer arranging carriage from Pakistan.</p>
+      </details>
+      <details>
+        <summary>What if units arrive faulty?</summary>
+        <p>Every unit is checked before packing. If a production fault reaches you, tell us with photographs within an agreed window and we will credit or replace the affected units against your next order — the exact remedy is written into the order confirmation so there are no surprises on either side.</p>
+      </details>
+      <details>
+        <summary>Do you offer exclusivity?</summary>
+        <p>Not on a trial order. Once a first order has been paid and delivered, we are open to discussing exclusivity for a named design or channel, for a fixed period and against a minimum purchase quantity — in writing.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="contact-band" id="contact">
+  <div class="wrap">
+    <h2>Start With a Sample</h2>
+    <div class="rule"></div>
+    <p class="lead">Send us your market, target quantity and any branding requirements. We reply with the FOB price list, sample cost and a production timeline for your specification — normally within one working day (Pakistan time, UTC+5).</p>
+    <div class="contact-grid">
+      <div>
+        <h3>WhatsApp Business</h3>
+        <p>Message us by email and we will continue on WhatsApp — our WhatsApp Business number is shared with trade enquiries.</p>
+      </div>
+      <div>
+        <h3>Email</h3>
+        <p><a href="mailto:hafizfrazahmad@gmail.com">hafizfrazahmad@gmail.com</a><br>Faraz Ahmad — Indus Leather Co, Lahore, Pakistan</p>
+      </div>
+      <div>
+        <h3>Prefer a Form?</h3>
+        <p>Email and WhatsApp are our contact channels for now — every enquiry is answered personally. (A web form will be added here once the trade name and domain are finalised.)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>Indus Leather Co — Handmade leather goods · Lahore, Pakistan</div>
+    <div>Wholesale &amp; private label · FOB Pakistan · Made in Pakistan</div>
+  </div>
+</footer>
+
+</body>
+</html>
